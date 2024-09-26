@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+  }
+   
+  .logo{
+    display: flex;
+
+  }
+  .logo img{
+    border-radius: 50%;
+  }
+  nav {
+    /* background-color: #333; */
+    /* background-color: #B6698D; */
+    background-image: linear-gradient(to right,#267E92,#B6698D );
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  
+
+  .nav-links {
+    display: flex;
+    list-style: none;
+  }
+
+  .nav-links li {
+    margin-left: 20px;
+  }
+
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  .nav-links a:hover {
+    color: #080808;
+  }
+
+  .menu-icon {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: #333;
+      position: absolute;
+      top: 60px;
+      left: 0;
+    }
+
+    .nav-links.show {
+      display: flex;
+    }
+
+    .nav-links li {
+      margin: 10px 0;
+      text-align: center;
+    }
+
+    .menu-icon {
+      display: block;
+    }
+  }
+
+  .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("bg.jpg");
+    /* height: 50%; */
+    height: 90vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .hero-text {
+    width: 80vw;
+
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+   
+  }
+  .text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px; padding-bottom: 50px;
+  }
+ 
+  .hero-text button {
+    width: 10vw;
+   
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: black;
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .hero-text button:hover {
+    background-color: #555;
+    color: white;
+  }
